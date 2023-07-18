@@ -1,0 +1,10 @@
+background.jpg :- https://resources01.blob.core.windows.net/$web/background.jpg
+Logo.png :- https://resources01.blob.core.windows.net/$web/Logo.png
+certificate1.pdf :- https://resources01.blob.core.windows.net/$web/certificate1.pdf
+certificate2.pdf :- https://resources01.blob.core.windows.net/$web/certificate2.pdf
+certificate3.pdf :- https://resources01.blob.core.windows.net/$web/certificate3.pdf
+cv.pdf :- https://resources01.blob.core.windows.net/$web/cv.pdf
+Github.png :- https://resources01.blob.core.windows.net/$web/Github.png
+Linkedin.png :- https://resources01.blob.core.windows.net/$web/Linkedin.png
+Twitter.png :- https://resources01.blob.core.windows.net/$web/Twitter.png
+profile1.jpg :- https://resources01.blob.core.windows.net/$web/profile1.jpg
