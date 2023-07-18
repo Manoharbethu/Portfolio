@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url("https://resources01.blob.core.windows.net/$web/background.jpg") no-repeat center center fixed;
+            background-size: cover;
+            overflow-x: hidden;
+        }
+
+        header {
+            padding: 10px 100px;
+            margin-top: 20px;
+            position: fixed;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+        }
+
+        .left .logo {
+            margin-right: 10px;
+            text-align: center;
+        }
+
+        .right a {
+            color: white;
+            font-family: sans-serif;
+            font-size: 18px;
+            text-decoration: none;
+            margin-left: 50px;
+            position: relative;
+            left: 900px;
+        }
+
+        .right a:hover {
+            color: violet;
+        }
+
+        .name p {
+            position: absolute;
+            top: 200px;
+            left: 590px;
+            font-family: cursive;
+            font-size: 50px;
+            color: white;
+        }
+
+        .name span {
+            position: absolute;
+            top: 10px;
+            left: 130px;
+            color: white;
+            font-family: 'Brush Script MT', cursive;
+        }
+
+        .butt button {
+            background-color: violet;
+            color: white;
+            font-family: sans-serif;
+            font-size: 18px;
+            height: 40px;
+            width: 200px;
+            position: absolute;
+            top: 450px;
+            left: 670px;
+            cursor: pointer;
+            border-radius: 15px;
+            border: solid violet;
+        }
+
+        .profile {
+            width: 300px;
+            height: 400px;
+            border-radius: 50%;
+            overflow: hidden;
+            position: absolute;
+            top: 750px;
+            left: 160px;
+        }
+
+        .profile img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+
+        .matter1 {
+            font-family: sans-serif;
+            font-size: larger;
+            position: absolute;
+            left: 550px;
+            top: 850px;
+            color: white;
+        }
+
+        .container0 {
+            position: absolute;
+            left: 60px;
+        }
+
+        .twitter {
+            position: absolute;
+            top: 535px;
+            left: 600px;
+        }
+
+        .linkedin {
+            position: absolute;
+            top: 530px;
+            left: 685px;
+        }
+
+        .github {
+            position: absolute;
+            top: 530px;
+            left: 780px;
+        }
+
+        .container3 {
+            position: absolute;
+            left: 240px;
+            top: 1350px;
+        }
+
+        .skills h2 {
+            font-family: sans-serif;
+            position: absolute;
+            top: -70px;
+            left: 480px;
+            color: violet;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skills h1 {
+            padding: 10px 20px;
+            background-color: violet;
+            color: white;
+            font-family: sans-serif;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .container4 {
+            position: absolute;
+            top: 1900px;
+            left: 500px;
+            width: 400px;
+            margin: 0 auto;
+            padding: 55px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        .container4 h2 {
+            text-align: center;
+        }
+
+        .container4 input[type="text"],
+        .container4 textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .container4 textarea {
+            height: 100px;
+        }
+
+        .container4 input[type="submit"] {
+            background-color: violet;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        .container4 input[type="submit"]:hover {
+            background-color: purple;
+        }
+
+        .container5 {
+            position: absolute;
+            top: 1500px;
+            left: 300px;
+            font-family: sans-serif;
+        }
+
+        .certificates {
+            position: absolute;
+            top: 120px;
+            left: 5px;
+            display: flex;
+            gap: 50px;
+        }
+
+        .certificate1 {
+            text-align: center;
+            border: 2px solid violet;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: violet;
+            width: 200px;
+        }
+
+        .certificate2 {
+            text-align: center;
+            border: 2px solid violet;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: violet;
+            width: 250px;
+        }
+
+        .certificate3 {
+            text-align: center;
+            border: 2px solid violet;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: violet;
+            width: 280px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <div class="logo">
+                    <img src="https://resources01.blob.core.windows.net/$web/Logo.png" style="height: 100px; width: 100px;">
+                </div>
+            </div>
+            <div class="right">
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container0">
+        <div class="twitter"><a href="https://twitter.com/Manu_bethu"><img src="https://resources01.blob.core.windows.net/$web/Twitter.png"
+                    style="height: 27px; width: 27px;"></a></div>
+        <div class="linkedin"><a href="https://www.linkedin.com/in/manoharbethu/"><img src="https://resources01.blob.core.windows.net/$web/Linkedin.png"
+                    style="height: 47px; width: 47px;"></a></div>
+        <div class="github"><a href="https://github.com/Manoharbethu"><img src="https://resources01.blob.core.windows.net/$web/Github.png"
+                    style="height: 40px; width: 40px;"></a></div>
+    </div>
+
+    <div class="container1">
+        <div class="name">
+            <p><b><span>HI I'm</span> <br> Manohar Bethu</b></p>
+        </div>
+
+        <div class="butt">
+            <button><a href="https://resources01.blob.core.windows.net/$web/cv.pdf" style="text-decoration: none;">Download CV</a></button>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="profile" id="about">
+            <img src="https://resources01.blob.core.windows.net/$web/profile1.jpg" alt="Profile Photo">
+        </div>
+
+        <div class="matter1">
+            <h2 style="color: violet;"><b>About Me</b></h2>
+            <p>Currently pursuing B. Tech from Lovely Professional University</p>
+            <p>Name:- Bethu Manohar</p>
+            <p>Course:- CSE(Data Science(ML & AI))</p>
+        </div>
+    </div>
+
+    <div class="container3">
+        <div class="skills">
+            <h2>Skills</h2>
+            <h1>C</h1>
+            <h1>JAVA</h1>
+            <h1>PYTHON</h1>
+            <h1>Microsoft Word</h1>
+            <h1>Github</h1>
+            <h1>AWS</h1>
+            <h1>Azure</h1>
+            <h1>Power BI</h1>
+            <h1>DevOps</h1>
+        </div>
+    </div>
+
+    <div class="container4" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="text" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="container5">
+        <h1 style="font-family: sans-serif; color: violet; position: absolute; left: 365px;">Certificates</h1>
+        <div class="certificates">
+            <div class="certificate1">
+                <a href="https://resources01.blob.core.windows.net/$web/certificate1.pdf" style="text-decoration: none; color: white;"><b>Python for Beginners</b></a>
+            </div>
+
+            <div class="certificate2">
+                <a href="https://resources01.blob.core.windows.net/$web/certificate2.pdf" style="text-decoration: none; color: white;"><b>Python for ML</b></a>
+            </div>
+
+            <div class="certificate3">
+                <a href="https://resources01.blob.core.windows.net/$web/certificate3.pdf" style="text-decoration: none; color: white;"><b>Cloud Computing and
+                        Azure</b></a>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 2500px;"></div>
+</body>
+
+</html>
